@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inicio de Sesión</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .container {
+        max-width: 700px;
+        margin: 100px auto;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        position: relative; /* Agregado para permitir el posicionamiento relativo */
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .img-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Espacio entre la imagen y el campo de usuario */
+    }
+    .img-container img {
+        max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+        height: auto;
+    }
+    .card {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    #mensaje-container {
+        padding: 10px;
+        background-color: #e9ecef;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+
+<!-- Card oculto -->
+<div class="container mt-5" id="card-container" style="display: none;">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title text-center">¡Bienvenido!</h5>
+            <p class="card-text text-center">Puedes comenzar a dar órdenes ahora.</p>
+            <img src="../imágenes/ordenar.jpg" class="img-fluid mx-auto d-block" alt="Ordenar">
+            <button id="detener" class="btn btn-danger btn-block mt-3">Detener</button>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="mensaje-container" style="display: none;">
+    <div id="mensaje" class="text-center"></div>
+    <button id="detener" class="btn btn-danger btn-block mt-3">Detener</button>
+    <button id="login" class="btn btn-primary btn-block mt-3">Login</button>
+</div>
+
+<div class="container" id="inicio-container">
+  <h4 class="text-center mb-4">Oprime el botón empezar para comenzar a dar las órdenes</h4>
+  
+  <div class="row">
+      <div class="col-md-6">
+          <div class="img-container">
+            <img src="imágenes/presentacion.gif" alt="Presentación">
+          </div>
+      </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
